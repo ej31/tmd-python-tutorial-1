@@ -55,6 +55,16 @@ for _number in numbers:
 print("곱셈 결과:", result)
 
 
+# 6번 문제
+
+names = ['Alice', 'Bob', 'Charlie']
+scores = [85, 90, 78]
+combined_list = []
+for comb_list in zip(names, scores):
+    combine_list = list(comb_list)
+    combined_list.append(combine_list)
+print(combined_list)
+
 
 
 
