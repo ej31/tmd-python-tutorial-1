@@ -63,7 +63,7 @@ combined_list = []
 for comb_list in zip(names, scores):
     combine_list = list(comb_list)
     combined_list.append(combine_list)
-print(combined_list)
+print(combined_list) 
 
 
 
