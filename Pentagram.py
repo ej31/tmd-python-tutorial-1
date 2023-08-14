@@ -1,3 +1,5 @@
+# Assignment - Draw a Pentagram
+
 i = 0
 j = 0
 k = 0
@@ -10,24 +12,35 @@ for i in range(1, 21):
         print("*", end="")
     print()
 
-
-MaxEndLettersCount = NumOfLetters + 10
-
-for MaxEndLettersCount in range(NumOfLetters + 10, MaxEndLettersCount)
 # Step 2
 NumOfSpaces = j
 NumOfLetters = k
-MaxEndLettersCount = 0
+MaxEndLettersCount = None
 
+MaxEndLettersCount = NumOfLetters + 10
+NumOfLetters = 2 * NumOfSpaces + NumOfLetters
+NumOfSpaces = 0
 
+while NumOfLetters > MaxEndLettersCount:
+    for _ in range(NumOfSpaces):
+        print(" ", end = "")
+    for _ in range(NumOfLetters):
+        print("*", end = "")
+    print("")
+
+    NumOfLetters -= 10
+    NumOfSpaces += 5
 
 # Step 3
+MaxEndLettersCount = NumOfLetters + 10
+
 while NumOfLetters <= MaxEndLettersCount:
-    for j in range(1, NumOfSpaces + 1):
+    for _ in range(NumOfSpaces):
         print(" ", end="")
-    for k in range(1, NumOfLetters):
+    for _ in range(NumOfLetters):
         print("*", end="")
     print()
+
     NumOfLetters += 2
     NumOfSpaces -= 1
 
@@ -36,16 +49,17 @@ internalSpace = 0
 scount = NumOfLetters
 
 while scount > 0:
-    for j in range(1, NumOfSpaces):
-        print(" ", end="")
+    for _ in range(NumOfSpaces):
+        print(" ", end = "")
     scount = NumOfLetters - internalSpace
-    for k in range(1, scount // 2 + 1):
-        print("*", end="")
-    for k in range(1, internalSpace + 1):
-        print(" ", end="")
-    for k in range(1, scount // 2 + 1):
-        print("*", end="")
-    print()
+    for _ in range(scount // 2):
+        print("*", end = "")
+    for _ in range(internalSpace):
+        print(" ", end = "")
+    for _ in range(scount // 2):
+        print("*", end = "")
+    print("")
+
     NumOfLetters += 2
     NumOfSpaces -= 1
     internalSpace += 6
