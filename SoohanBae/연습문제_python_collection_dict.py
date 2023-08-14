@@ -1,5 +1,6 @@
 # 'even_numbers' 함수를 정의합니다.
 # 이 함수는 정수 리스트를 입력받아 짝수만을 반환합니다.
+
 def even_numbers(numbers):
     for number in numbers:
         if number % 2 == 0:
@@ -75,10 +76,13 @@ print(count_vowels(string))  # 출력: 4
 # 'alphabet_frequency' 함수를 정의합니다.
 # 이 함수는 문자열을 입력받아 각 알파벳 문자의 빈도를 사전 형태로 반환합니다.
 def alphabet_frequency(s):
+    from string import punctuation, whitespace
     from collections import defaultdict
+
     tmp_dict = defaultdict(int)
     for w in s:
-        tmp_dict[w] += 1
+        if w not in punctuation and w not in whitespace:
+            tmp_dict[w] += 1
     return tmp_dict
 
 
@@ -89,3 +93,27 @@ string = "Hello, Python!"
 # 'alphabet_frequency' 함수를 호출하고 결과를 출력합니다.
 # 출력: {'H': 1, 'e': 1, 'l': 2, 'o': 2, 'P': 1, 'y': 1, 't': 1, 'h': 1, 'n': 1}
 print(alphabet_frequency(string))
+
+dict_type_2 = {
+    "fruit": {
+        "apple": {
+            "price": 100,
+            "quantities": 5
+        },
+        "cherry": {
+            "price": 80,
+            "quantities": 100
+        },
+    },
+    "manager": {
+        "John Smith",
+        "홍길동"
+    },
+    "manager_lv": [
+        {"admin": 100},
+        {"user_grade_1": 50},
+        {"user_grade_2": 80}
+    ]
+}
+
+print(dict_type_2)
