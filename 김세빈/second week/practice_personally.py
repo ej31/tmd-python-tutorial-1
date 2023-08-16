@@ -5,6 +5,7 @@ for num in sum_list:
     _sum += num
 print(_sum)
 
+print('\n')
 
 #홀짝 분류(1~50)
 deter_list = list(range(1,51))
@@ -18,6 +19,7 @@ for i in deter_list:
 
 print(f"짝수 리스트는: {even_list}\n홀수 리스트는: {odd_list}")
 
+print('\n')
 
 #최댓값 찾기(파이썬 내장함수 x)
 number_list = [46,13,74,52,7,25,68,41]
@@ -27,6 +29,7 @@ for i in number_list:
         max_num = i
 print(f"최댓값은 {max_num}")
 
+print('\n')
 
 #소수 판별(1과 자기자신만을 약수로 가지는 수)
 prime_num = int(input("임의의 숫자를 입력하여 주세요: "))
@@ -41,6 +44,7 @@ if len(measure) == 2:
 else:
     print("소수가 아닙니다.")
 
+print('\n')
 
 #리스트 요소 위치 교환
 change_list = [1,2,3,4,5,6,7,8]
@@ -53,6 +57,7 @@ change_list[first_change] = change_list[sec_change]
 change_list[sec_change] = temp
 print(change_list)
 
+print('\n')
 
 #리스트에서 한 칸 씩 회전시키기
 num_list = [1,2,3,4,5,6,7,8,9,10]
@@ -69,6 +74,8 @@ for i in range(0, length):
 print(num_list)
 print(copy_num_list)
 
+print('\n')
+
 #리스트 합집합과 교집합
 list_one = [1,2,3,4,5,6,7,8]
 list_two = [5,6,7,8,9,10]
@@ -84,6 +91,7 @@ print(f"합집합은 {sorted(sum_list)}")
 intersection = list(set(list_one) & set(list_two))
 print(f"교집합은 {sorted(intersection)}")
 
+print('\n')
 
 #리스트 평균과 분산
 cal_list = [1,2,3,4,5,6,7,8,9,10]
