@@ -5,29 +5,3 @@
 
 ## 참고
 - 제출 된 PR을 통해 코드리뷰를 진행 할 수 있습니다. 코드리뷰 원하지 않는 경우 말씀해주세요.
-
-#(1)
-print("1부터 10까지의 짝수를 표시합니다.")
-for 숫자 in range(1, 11):
-    if 숫자 % 2 == 0:
-        print(숫자)
-
-#(2)
-print("1부터 10까지의 짝수를 표시합니다.")
-for 숫자 in range(2, 11, 2):
-    print(숫자)
-
-#(3)
-for 행 in range(1, 10):
-    for 열 in range(1, 10):
-        결과 = 행 * 열
-        print(결과, end='\t')
-    print()
-
-#(4)
-for i in range(1, 6):
-    print('*' * i)
-
-#(5)
-for i in range(5, 0, -1):
-    print('*' * i)
