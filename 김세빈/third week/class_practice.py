@@ -1,3 +1,6 @@
+#  class 연습
+# 기존 코드를 class 형태로 묶어내기!
+
 class string_util_func:
     def __init__(self, s: str):
         self.__string_util = string_util
