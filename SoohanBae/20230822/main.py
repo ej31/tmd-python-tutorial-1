@@ -1,100 +1,6 @@
-from collections import defaultdict
-from string import punctuation, whitespace
-
-# list(int)에 관한 함수들
-
-
-class AllNumberFuncitons:
-    def __init__(self, numbers):
-        self.__numbers = numbers
-
-    def even_numbers(self):
-        """
-        짝수만 반환하는 함수
-        """
-        _tmp = self.__numbers.copy()
-        for number in _tmp:
-            if number % 2 == 0:
-                continue
-            elif number % 2 == 1:
-                _tmp.remove(number)
-        return _tmp
-
-    def sum_elements(self):
-        """
-        값의 합을 반환하는 함수
-        """
-        return sum(self.__numbers)
-
-    def find_max_min(self):
-        """
-        값의 최대최소를 tuple로 반환하는 함수
-        """
-        return (max(self.__numbers), min(self.__numbers))
-
-# 문자열에 관한 함수들
-
-
-class AllStringFunctions:
-    def __init__(self, string):
-        self.__string = string
-
-    def reverse_string(self):
-        """
-        string을 뒤집어 반환하는 함수
-        """
-        return self.__string[::-1]
-
-    def count_vowels(self):
-        """
-        모음의 개수만 반환하는 함수
-        """
-        _ans = 0
-        for w in self.__string:
-            if w.lower() in 'aeiou':
-                _ans += 1
-        return _ans
-
-    def alphabet_frequency(self):
-        """
-        문자열을 입력받아 빈도를 사전 형태로 반환하는 함수
-        """
-        _tmp_dict = defaultdict(int)
-        for w in self.__string:
-            if w not in punctuation and w not in whitespace:
-                _tmp_dict[w] += 1
-        return _tmp_dict
-
-
-# 클래스 정의 (자동차 틀)
-class Car:
-    def __init__(self, color, model):
-        self._color = color
-        self._model = model
-        self._is_running = False
-
-    def start_engine(self):
-        if not self._is_running:
-            print(f"{self._color} 색상 {self._model} 모델 자동차의 엔진이 시작되었습니다.")
-            self._is_running = True
-        else:
-            print("이미 엔진이 작동 중입니다.")
-
-    def accelerate(self):
-        if self._is_running:
-            print(f"{self._color} 색상 {self._model} 모델 자동차가 가속 중입니다.")
-        else:
-            print("먼저 엔진을 시작하세요.")
-
-    def stop(self):
-        if self._is_running:
-            print(f"{self._color} 색상 {self._model} 모델 자동차가 정지되었습니다.")
-            self._is_running = False
-        else:
-            print("이미 엔진이 꺼져 있습니다.")
-
-
-# 실제 작동하는 함수
+from Car_module import Car
+from AllNumberFunctions_module import AllNumberFunctions
+from AllStringFunctions_module import AllStringFunctions
 
 
 def main():
@@ -110,7 +16,7 @@ def main():
     blue_car.start_engine()
     blue_car.accelerate()
 
-    num_obj = AllNumberFuncitons(numbers=[1, 2, 3, 4, 5])
+    num_obj = AllNumberFunctions(numbers=[1, 2, 3, 4, 5])
     str_obj = AllStringFunctions("Hello Python!")
 
     print("숫자형 리스트에 대해 짝수만 반환한 결과: ", num_obj.even_numbers())
