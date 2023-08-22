@@ -12,8 +12,7 @@ class Utils:
 
     @staticmethod
     def sum_elements(elements):
-        total = sum(elements)
-        return total
+        return sum(elements)
 
     @staticmethod
     def find_max_min(numbers):
