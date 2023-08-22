@@ -1,0 +1,56 @@
+class NumberOperations:
+    def __init__(self, numbers):
+        self.numbers = numbers
+        self.even_list = []
+        self.unique_fruits = []
+        self.even_numbers = []
+        self.odd_numbers = []
+        self.multiply = 1
+
+    def find_even_numbers(self):
+        for i in self.numbers:
+            if i % 2 == 0:
+                self.even_list.append(i)
+        return self.even_list
+
+    @staticmethod
+    def reverse_string(s):
+        return s[::-1]
+
+    def remove_duplicates(self, fruits):
+        for element in fruits:
+            if element not in self.unique_fruits:
+                self.unique_fruits.append(element)
+        return self.unique_fruits
+
+    def separate_even_odd_numbers(self):
+        self.even_numbers = [number for number in self.numbers if number % 2 == 0]
+        self.odd_numbers = [number for number in self.numbers if number % 2 == 1]
+        return self.even_numbers, self.odd_numbers
+
+    def calculate_multiply(self):
+        self.multiply = 1
+        for number in self.numbers:
+            self.multiply *= number
+        return self.multiply
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+operation = NumberOperations(numbers)
+
+print("짝수:", operation.find_even_numbers())
+
+example_string = "파이썬"
+print(operation.reverse_string(example_string))
+
+fruits = ['apple', 'banana', 'orange', 'banana', 'kiwi', 'apple']
+print(operation.remove_duplicates(fruits))
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+operation.numbers = numbers
+even_numbers, odd_numbers = operation.separate_even_odd_numbers()
+print("짝수:", even_numbers)
+print("홀수:", odd_numbers)
+
+numbers = [1, 2, 3, 4, 5]
+operation.numbers = numbers
+print(operation.calculate_multiply())
