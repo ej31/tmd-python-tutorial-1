@@ -15,9 +15,3 @@ print("Max:", max_value)
 print("Min:", min_value)
 print()
 
-if __name__ == "__main__":
-    numbers = [34, 12, 56, 78, 23]
-    number_analyzer = NumberAnalyzer(numbers)
-    max_value, min_value = number_analyzer.find_max_min()
-    print("Max:", max_value)
-    print("Min:", min_value)

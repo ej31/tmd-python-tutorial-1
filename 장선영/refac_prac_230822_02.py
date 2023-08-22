@@ -13,8 +13,3 @@ reversed_string = string_reverser.reverse_string()
 print(reversed_string)
 print()
 
-if __name__ == "__main__":
-    example_string = "파이썬"
-    string_reverser = StringReverser(example_string)
-    reversed_string = string_reverser.reverse_string()
-    print(reversed_string)

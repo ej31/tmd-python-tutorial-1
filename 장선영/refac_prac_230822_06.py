@@ -15,8 +15,3 @@ class AlphabetFrequencyCounter:
 
 
 
-if __name__ == "__main__":
-    string = "Hello, Python"
-    frequency_counter = AlphabetFrequencyCounter(string)
-    frequency_result = frequency_counter.alphabet_frequency()
-    print(frequency_result)

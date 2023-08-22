@@ -17,8 +17,3 @@ vowel_count = vowel_counter.count_vowels()
 print("Number of vowels:", vowel_count)
 print()
 
-if __name__ == "__main__":
-    string = "Hello, Python"
-    vowel_counter = VowelCounter(string)
-    vowel_count = vowel_counter.count_vowels()
-    print("Number of vowels:", vowel_count)

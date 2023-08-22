@@ -15,8 +15,3 @@ number_processor = NumberProcessor(numbers)
 print(number_processor.even_numbers())
 print()
 
-if __name__ == "__main__":
-    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    number_processor = NumberProcessor(numbers)
-    even_numbers_result = number_processor.even_numbers()
-    print(even_numbers_result)
