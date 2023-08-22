@@ -2,6 +2,7 @@ class Utils:
     def __init__(self):
         pass
 
+    @staticmethod
     def even_numbers(numbers):
         _numbers = []
         for number in numbers:
@@ -9,15 +10,17 @@ class Utils:
                 _numbers.append(number)
         return _numbers
 
-
+    @staticmethod
     def sum_elements(elements):
         total = sum(elements)
         return total
 
+    @staticmethod
     def find_max_min(numbers):
         found = []
         return max(numbers), min(numbers)
 
+    @staticmethod
     def count_vowels(str):
         vowels = set("aeiouAEIOU")
         count = 0
@@ -27,7 +30,7 @@ class Utils:
                 count += 1
         return count
 
-
+    @staticmethod
     def alphabet_frequency(s):
         d = {}
         for char in s:
