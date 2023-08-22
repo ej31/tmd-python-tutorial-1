@@ -12,13 +12,13 @@ class AllNumberFuncitons:
         """
         짝수만 반환하는 함수
         """
-        tmp = self.__numbers.copy()
-        for number in tmp:
+        _tmp = self.__numbers.copy()
+        for number in _tmp:
             if number % 2 == 0:
                 continue
             elif number % 2 == 1:
-                tmp.remove(number)
-        return tmp
+                _tmp.remove(number)
+        return _tmp
 
     def sum_elements(self):
         """
@@ -49,21 +49,21 @@ class AllStringFunctions:
         """
         모음의 개수만 반환하는 함수
         """
-        ans = 0
+        _ans = 0
         for w in self.__string:
             if w.lower() in 'aeiou':
-                ans += 1
-        return ans
+                _ans += 1
+        return _ans
 
     def alphabet_frequency(self):
         """
         문자열을 입력받아 빈도를 사전 형태로 반환하는 함수
         """
-        tmp_dict = defaultdict(int)
+        _tmp_dict = defaultdict(int)
         for w in self.__string:
             if w not in punctuation and w not in whitespace:
-                tmp_dict[w] += 1
-        return tmp_dict
+                _tmp_dict[w] += 1
+        return _tmp_dict
 
 
 # 클래스 정의 (자동차 틀)
