@@ -1,6 +1,6 @@
-from Car_module import Car
-from AllNumberFunctions_module import AllNumberFunctions
-from AllStringFunctions_module import AllStringFunctions
+from car_module import Car
+from allnumberfunctions_module import AllNumberFunctions
+from allstringfunctions_module import AllStringFunctions
 
 
 def main():
