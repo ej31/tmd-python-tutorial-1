@@ -36,9 +36,3 @@ class StringUtilFunc:
         :return:
         """
         return string_util[::-1]
-
-# string = "Hello, Python!"
-# print(string_util_func.alphabet_frequency(string))
-# string_kor = "파이썬"
-# print(string_util_func.count_vowels(string))
-# print(string_util_func.reverse_string(string_kor))
