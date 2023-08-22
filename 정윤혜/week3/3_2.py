@@ -5,3 +5,4 @@ def sum_elements(elements):
 numbers = [10, 20, 30, 40, 50]
 total = sum_elements(numbers)
 print(sum_elements(numbers))
+
