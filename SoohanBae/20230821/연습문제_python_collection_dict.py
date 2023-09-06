@@ -10,8 +10,6 @@ def even_numbers(numbers):
     return numbers
 
 
-# 이 곳에 코드를 작성해주세요
-# 이 곳에 코드를 작성해주세요
 # 예제로 사용할 숫자 리스트
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # 'even_numbers' 함수를 호출하고 결과를 출력합니다.
